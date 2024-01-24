@@ -1,0 +1,33 @@
+{
+    "$schema": "https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/schema/library.json",
+    "name": "THERM200",
+    "version": "1.0.0",
+    "description": "Library for THERM200 sensor.",
+    "keywords": [],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/rpvos/Therm200.git"
+    },
+    "authors": [
+        {
+            "name": "Rik Vos",
+            "email": "Rik.Vos01@gmail.com",
+            "url": "http://rpvos.nl",
+            "maintainer": true
+        }
+    ],
+    "frameworks": [
+        "Arduino"
+    ],
+    "platforms": [
+        "atmelavr"
+    ],
+    "headers": [
+        "therm200.hpp"
+    ],
+    "examples": [],
+    "dependencies": [],
+    "export": {},
+    "scripts": {},
+    "build": {}
+}

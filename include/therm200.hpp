@@ -6,8 +6,8 @@
 class Therm200
 {
 private:
-    float voltsPerUnit;
-    float temperaturePerVoltage;
+    int adc_bits = 0;
+    float operating_voltage = 0;
 
     uint8_t adc_pin;
 
