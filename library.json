@@ -23,7 +23,8 @@
         "atmelavr"
     ],
     "headers": [
-        "therm200.hpp"
+        "therm200.hpp",
+        "therm200_helper.hpp"
     ],
     "examples": [],
     "dependencies": [],

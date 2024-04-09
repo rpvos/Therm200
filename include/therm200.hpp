@@ -6,16 +6,13 @@
 class Therm200
 {
 private:
-    int adc_bits = 0;
-    float operating_voltage = 0;
-
     uint8_t adc_pin;
 
 public:
-    Therm200(uint8_t adc_pin, float operating_voltage = 5.0f, int adc_bits = 10);
+    Therm200(uint8_t adc_pin);
     ~Therm200();
 
-    float Measure();
+    uint16_t Measure();
 };
 
 #endif // THERM200_HPP_
