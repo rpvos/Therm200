@@ -6,7 +6,7 @@
 class Therm200Helper
 {
 public:
-    static constexpr float CalculateTemperature(const uint16_t &value, const float &operating_voltage = 5.0f, const int &adc_bits = 10);
+    static float CalculateTemperature(const uint16_t &value, const float &operating_voltage = 5.0f, const int &adc_bits = 10);
 };
 
 #endif // THERM200_HELPER_HPP_
