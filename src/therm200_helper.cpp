@@ -15,13 +15,13 @@ constexpr float GetTemperaturePerVoltage()
     return (float)(kOperationalTemperatureHighest - kOperationalTemperatureLowest) / (kOperationalVoltageHighest - kOperationalVoltageLowest);
 }
 
-float Therm200Helper::CalculateTemperature(uint16_t value, float operating_voltage, int adc_bits)
+constexpr float Therm200Helper::CalculateTemperature(const uint16_t &value, const float &operating_voltage, const int &adc_bits)
 {
     // Calculate the voltage of the pin
-    float voltage = value * operating_voltage / get_adc_range(adc_bits);
+    const float voltage = value * operating_voltage / get_adc_range(adc_bits);
 
     // Calculate the temperature based on the calculated voltage
-    float temperature_in_celsius = (voltage * GetTemperaturePerVoltage()) + kOperationalTemperatureLowest;
+    const float temperature_in_celsius = (voltage * GetTemperaturePerVoltage()) + kOperationalTemperatureLowest;
 
     return temperature_in_celsius;
 }
